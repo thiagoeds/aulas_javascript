@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>195 - Atidade de fixação</title>
+
+    <style>
+
+        .cor1 {
+            background-color: yellow;
+        }
+        .ate2 {
+            background-color: red;
+            color: white;
+        }
+        .maisde3 {
+            background-color: green;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Aula 195 - Atividade de fixação</h1>
+
+    <p>1) Crie um campo < input type="text" > e aplique os seguintes controles com base nos eventos abaixo:</p>
+
+    <br>
+
+    <ul>
+        <li> No evento de foco modifique o background do input para amarelo.</li>
+        <li> Quando o campo perder o foco, recupere o seu respectivo valor e:</li>
+        <br>
+        <ul>
+            <li> Caso o conteúdo contido no campo tenha menos de 3 caracteres o mesmo deve ter seu background alterado para vermelho.</li>
+            <li> Caso o conteúdo contido no campo tenha 3 caracteres ou mais o background deve ser alterado para verde.</li>
+        </ul>
+    </ul>
+
+    <br><hr>
+
+    <input 
+        type="text"
+        placeholder="Digite aqui"
+        id="campo" 
+        onfocus="alterarcor()"
+        onblur="anulacor()"
+        
+    >
+
+    <script>
+
+        function alterarcor() {
+            document.getElementById('campo').style.background = "yellow";
+        }
+
+        function anulacor() {
+            var valorCampo = document.getElementById('campo').value
+
+            if(valorCampo.length < 3) {
+                document.getElementById('campo').style.background = "red";
+            } else {
+                document.getElementById('campo').style.background = "green";
+            }
+        }
+
+               
+
+    </script>
+    
+</body>
+</html>

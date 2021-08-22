@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de teclado</title>
+</head>
+<body>
+
+    <h1>
+        Evento de teclado
+    </h1>
+
+    <ul>
+        <li>onkeydown</li>
+        <li>onkeypress</li>
+        <li>onkeyup</li>
+    </ul>
+
+    <p>
+        O evento sera disparado no momento que for digitado algo no teclado, após digitar, sera acionado o comando de <b>onkeydown</b>, apenas após confirmar ação do script que a letra digitada será apresentada.
+    </p>
+    <input onkeydown="acao1()" type="text" style="border: 1px solid #A9A9F5">
+
+    <br><br><hr><br>
+
+    <p>
+        O evento <b>onkeypress</b>,fica entre o "onkeydown" e o "onkeyup" pois a o evento acontece quando algum caractere é precionado, exeto (CTRL,ALT,SHIFT) teclas que com quando precionada com alguma outra tera alguma ação, portanto é muito parecido com o "onkeydown", apenas após confirmar ação do script que o caractere digitado será apresentado.
+    </p>
+    <input onkeypress="acao2()" type="text" style="border: 1px solid #A9A9F5">
+
+    <br><br><hr><br>
+
+    
+    <p>
+        O evento <b>onkeyup</b>, diferente do "onkeydown", apresenta primeiro a letra digitada e em seguida dispara o evento.
+    </p>
+    <input onkeyup="acao3()" type="text" style="border: 1px solid #A9A9F5;">
+
+    <br><br><hr><br>
+
+
+    <script>
+        
+        function acao1() {
+            alert('Algo foi digitado, e o evento "onkeydown" foi disparado e em seguida o caractere será apresentado.')
+        }
+        function acao2() {
+            alert('Alguma tecla foi precionada, e o evento "onkeypress" foi disparado e após confirmar o evento o caractere sera apresentado.')
+        }
+        function acao3() {
+            alert('Algo foi e o caractere já foi apresentado, e o evento "onkeyup" foi disparado em seguida.')
+        } 
+
+    </script>
+    
+</body>
+</html>

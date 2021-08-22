@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de Fixação</title>
+</head>
+<body>
+    
+    <H1>
+        Atividade de Fixação da aula 184 
+    </H1>
+
+    <ol>
+        <li>A atividade consiste em criar uma aplicação que solicite ao usuario ao entrar um número, seguido de uma operação de soma ou subtração e posteriormente seguido de um segundo número.</li>
+
+        <br><br>
+
+        <li>A operação deve ser inserida pelo usuario de forma textual, ou seja, quado o sistema solicita a operação o usuario deve informar o texto 'soma' ou 'subtração' (sem as aspas).</li>
+
+        <br><br>
+
+        <li>Na sequência o sistema deve enviar os parâmetros para uma função efetuar o devido cálculo. Exemplo: calcular(num1, num2, operação).</li>
+
+        <br><br>
+
+        <li>A função deve executar o cálculo com base na operação informada pelo usuário e na sequência deve retornar o valor encontrado.</li>
+
+        <br><br>
+
+        <li>Ao término o sistema deve fornecer a seguinte saída para o usuário:</li>
+    </ol>
+
+    <!-- <p>
+        "O resultado é:"
+    </p> -->
+
+    <script>
+
+        var num1 = prompt('Digite um numero:');
+        var operacao = prompt('Digite o nome da operação que deseja realizar: soma ou subtração.');
+        var num2 = prompt('Digite outro numero:');
+
+        function calc(num1, num2, operacao) {
+
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+
+            var resultado = 0;
+
+            if(operacao == 'soma') {
+                resultado = num1 + num2;
+            } 
+        
+            if(operacao == 'subtração') {
+                resultado = num1 - num2;
+            }
+
+            return resultado;
+        }
+      
+        document.write('O resultado é: ' + calc(num1, num2, operacao));       
+
+    </script>  
+    
+    <h3>
+        Abaixo segue o passo a passo do que foi realizado
+    </h3>
+
+    <p>
+        var num1 = prompt('Digite um numero:'); <br>
+        var operacao = prompt('Digite o nome da operação que deseja realizar: soma ou subtração.'); <br>
+        var num2 = prompt('Digite outro numero:'); <br><br>
+
+        function calc(num1, num2, operacao) { <br><br>
+
+            num1 = parseFloat(num1); <br>
+            num2 = parseFloat(num2); <br><br>
+
+            var resultado = 0; <br><br>
+
+            if(operacao == 'soma') { <br>
+                resultado = num1 + num2; <br>
+            }  <br><br>
+        
+            if(operacao == 'subtração') { <br>
+                resultado = num1 - num2; <br>
+            } <br><br>
+
+            return resultado; <br>
+        } <br><br>
+    
+        document.write('O resultado é: ' + calc(num1, num2, operacao));
+    </p>
+   
+
+</body>
+</html>

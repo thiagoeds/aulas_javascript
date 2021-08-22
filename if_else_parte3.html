@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if/else parte 3</title>
+    <style>
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Operadores Lógicos</h1>
+
+    <h3>
+        O que são Operadores lógicos?
+    </h3>
+
+    <h4>Operadores:</h4>
+
+    <ul>
+        <li>E (<span>&&</span>) - Verdadeiro se todas as expressões forem Verdadeiras.</li>
+        <li>OU (<span>||</span>) - Verdadeiro se pelo menos umas das expressões for verdadeira.</li>
+        <li> Negação (<span>!</span>) - Inverte o resultado da expressão de comparação.</li>
+    </ul>
+
+    <p>
+        Vejamos o exemplos de && abaixo:
+    </p>
+    <div>
+
+        <p>
+            //true && true = true <br>
+            if(2 == 2 && 3 >= 1) {  <br>
+            document.write('Verdadeiro')
+            }
+        </p>
+    </div>
+
+    <script>
+        //true && true = true
+        if(2 == 2 && 3 >= 1) {
+            document.write('Verdadeiro')
+        } else {
+            document.write('Falso')
+        }
+    </script>
+
+<p>
+    Segundo exemplo de &&: <br><br>
+
+    //true && true && false = true <br>
+    if(2 == 2 && 3 >= 1 && 'a' == 'b') {  <br>
+        document.write('Verdadeiro')  <br>
+    } else {  <br>
+        document.write('Falso')  <br>
+    }
+</p>
+
+<script>
+//true && true && false = true
+if(2 == 2 && 3 >= 1 && 'a' == 'b') {
+    document.write('Verdadeiro') 
+} else {
+    document.write('Falso')
+}
+</script> 
+
+    <p>
+        Vejamos o exemplos de || abaixo:
+    </p>
+    
+    <p>
+        //false && false && false = false <br>
+        if(4 == 2 || 3 >= 5 || 'a' == 'b') {  <br>
+            document.write('Verdadeiro')  <br>
+        } else {  <br>
+            document.write('Falso')  <br>
+        }
+    </p>
+    
+
+<script>
+    //false && false && false = false
+    if(4 == 2 || 3 >= 5 || 'a' == 'b') {
+        document.write('Verdadeiro') 
+    } else {
+        document.write('Falso')
+    }
+</script>
+
+    <p>
+        Vejamos o exemplos de ! abaixo:
+    </p>
+
+    <p>
+        //false = false <br>
+        if(!(4 == 2)) {  <br>
+            document.write('Verdadeiro')  <br>
+        } else {  <br>
+            document.write('Falso')  <br>
+        }
+    </p>
+
+    <script>
+        //false = false
+        if(!(4 == 2)) {
+            document.write('Verdadeiro') 
+        } else {
+            document.write('Falso')
+        }
+    </script>
+
+    <p>
+        Segundo exemplo:
+    </p>
+
+    
+    <p>
+        //true = false <br>
+        if(!(5 >= 2)) {  <br>
+            document.write('Verdadeiro')  <br>
+        } else {  <br>
+            document.write('Falso')  <br>
+        }
+    </p>
+
+
+    <script>
+        //true = false
+        if(!(5 >= 2)) {
+            document.write('Verdadeiro') 
+        } else {
+            document.write('Falso')
+        }
+    </script>
+
+    <p>
+        Outro exemplo logico seria é na criação de regra para saber se o aluno foi aprovado ou reprovado a partir da nota em relação as faltas. <br>
+        <br>
+        Para isso vamos usar o exercicio da aula anterior: <br> <br>
+
+    </p>
+
+    <p>
+        var nota = prompt('Digite a nota do aluno:')  <br>
+        var nota = prompt('Digite a quantidade de faltas:')  <br> <br>
+
+        var media = 7  <br>
+        var faltas_maximas = 15  <br> <br>
+
+        if (nota >= media && faltas <= faltas_maximas) {  <br>
+            document.write('Aprovado')  <br>
+        } else {  <br>
+            document.write('Reprovado')   <br>
+        }
+    </p>
+
+    <script>
+        var nota = prompt('Digite a nota do aluno:')
+        var faltas = prompt('Digite a quantidade de faltas:')
+
+        var media = 7
+        var faltas_maximas = 15
+
+        if (nota >= media && faltas <= faltas_maximas) {
+            document.write('Aprovado')
+        } else {
+            document.write('Reprovado')
+        }
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>

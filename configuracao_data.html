@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>calculo de datas</title>
+    </head>
+    <body>
+
+        <h1>Contagem/calculo de datas</h1>
+
+            <script>
+
+                //27/07/2021
+
+                var data1 = new Date(2021, 6, 27)
+
+                //08/03/2021
+
+                var data2 = new Date(2022, 2, 8)
+                document.write(data1.toString())
+                document.write('<hr />')
+                document.write(data2.toString())
+                document.write('<br /><br /><hr />')
+
+                // Converter datas para algo que possamos calcular
+
+                document.write(data1.getTime())
+                document.write('<hr />')
+                document.write(data2.getTime())
+                document.write('<br /><br /><hr />')
+
+                // contagem padrão de data por computadores, 1 de janeiro de 1970        
+
+                // Encontrar a quantidade de milissegundos entre data1 e data2
+
+                var milissegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+                document.write(milissegundos_entre_datas)
+                
+
+                // Sabemos que 1 dia tem 24hrs, cada hora tem 60 minutos, cada minuto tem 60 segundos e cada segundo tem 1000 milissegundos
+
+                // Quantos milissegundos existem em um dia?
+
+                var milissegundos_por_dia = (1*24*60*60*1000)
+
+                document.write(' 1 dia tem: ' + milissegundos_por_dia + 'milissegundos')
+
+                document.write('<br /><br /><hr />')
+
+                document.write('A diferença entre data1 e data2 é de ' + Math.ceil(milissegundos_entre_datas / milissegundos_por_dia) + ' dia(s)')
+
+                document.write('<br /><br /><hr />')
+
+            </script>
+
+            <h1>baby</h1>
+
+            <script>
+
+                //27/07/2021
+
+                var data1 = new Date()
+
+                //08/03/2021
+
+                var data2 = new Date(2022, 2, 8)
+                document.write(data1.toString())
+                document.write('<hr />')
+                document.write(data2.toString())
+                document.write('<br /><br /><hr />')
+
+            </script>
+
+    </body>
+</html>    

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM parte 2</title>
+</head>
+
+<body>
+    
+    <h1>DOM parte 2 - Selecionando elementos da página!</h1>
+
+    <div style="border: 1px solid #000; color: rgb(21, 21, 168); width: 240px;">
+        <ol>
+            <li>getElementById()</li>
+            <br>
+            <li>getElementsByTagName()</li>
+            <br>
+            <li>getElementsByClassName()</li>
+            <br>
+            <li>getElementByName()</li>
+        </ol>       
+    </div>
+
+    <p>
+        input <br>
+        type="text"  <br>
+        placeholder="Digite seu nome" <br>
+        id="nome_usuario" <br>
+        class="campo_texto" <br>
+        name="nome" <br>
+    </p>
+
+    <input
+        type="text"
+        placeholder="Digite seu nome"
+        id="nome_usuario"
+        class="campo_texto"
+        name="nome"    
+    >
+
+    <script>
+        console.log(document.getElementById('nome_usuario'))
+        //console.log(document.getElementsByTagName('input'))
+        //console.log(document.getElementsByClassName('campo_texto'))
+        //console.log(document.getElementsByName('nome'))
+    </script>
+
+</body>
+
+</html>

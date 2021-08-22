@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM parte 4</title>
+</head>
+
+    <body>
+        
+        <h1>DOM parte 4 - Manipulando estilos de elementos</h1>
+
+        <p>Manipulando estilo</p>
+
+        <button type="button" onclick="modificaEstilo('red')">Vermelho</button>
+        <button type="button" onclick="modificaEstilo('green')">Verde</button>
+        <button type="button" onclick="modificaEstilo('blue')">Azul</button>
+      
+
+       <div id="quadrado" style="width: 150px; height: 150px; border: 1px solid #000; margin: 15px;"></div>
+
+    </body>
+
+    <script>
+
+        function modificaEstilo(corDeFundo) {
+            
+            document.getElementById('quadrado').style.background = corDeFundo
+            document.getElementById('quadrado').style.border = corDeFundo
+        }
+
+    </script>
+
+</html>

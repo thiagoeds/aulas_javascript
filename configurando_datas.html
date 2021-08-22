@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando um pouco mais com datas!</title>
+</head>
+<body>
+
+    <h1>
+        Praticando um pouco mais com datas! <br>
+    </h1>
+
+    <p>
+        Na aula anterior vimos que o atributo "get" recupera dados, nesta aula vamos ver como se configura datas dentro do Javascript com o atributo "set".
+    </p>
+
+    <h3>
+        Neste primeiro exemplo, vamos ver como podemos adicionar ou remover dias:
+    </h3>
+
+    <script>
+        var data = new Date()
+
+        // adicionar / remover dias
+
+        document.write(data.toString())
+        data.setDate(data.getDate() + 1 )
+        document.write('<hr />')
+        document.write(data.toString())
+        document.write('<br /><br />')
+
+    </script>
+
+    <h3>
+        Neste primeiro exemplo, vamos ver como podemos adicionar ou remover meses:
+    </h3>
+
+    <script>
+        var data = new Date()
+
+        // adicionar / remover meses
+        
+        document.write(data.toString())
+        data.setMonth(data.getMonth() + 1 )
+        document.write('<hr />')
+        document.write(data.toString())
+        document.write('<br /><br />')
+
+    </script>
+
+    <h3>
+        Neste primeiro exemplo, vamos ver como podemos adicionar ou remover anos:
+    </h3>
+
+    <script>
+        var data = new Date()
+
+         // adicionar / remover anos
+        
+         document.write(data.toString())
+        data.setFullYear(data.getFullYear() + 1 )
+        document.write('<hr />')
+        document.write(data.toString())
+        document.write('<br /><br /><hr />')
+       
+    </script>
+
+       
+
+</body>
+</html>

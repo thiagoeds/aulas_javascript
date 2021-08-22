@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Método de Pesquisa</title>
+</head>
+<body>    
+
+    <h1>Array - Método de Pesquisa</h1>
+
+    <p>
+        Nesta aula o nosso desafio e bem simples, nos vamos aprender como podemos pesquisar elementos dentro dos nossoas arrays.
+    </p>
+
+    <p>
+        A ideia é pesquisar o elemento para verificar se ele existe ou não e a partir disso tomar algum tipo de decisão dentro da lógica das nossas aplicações.
+    </p>
+
+    <p>
+        Vamos criar o array lista_frutas para implementarmos a Pesquisa, vamos recuperar o array e colocar algumas posições e um tipo de fruta para cada uma delas.
+    </p>
+
+    <p>
+        var lista_frutas = Array() <br>
+
+        lista_frutas[0] = ' Banana' <br>
+        lista_frutas[1] = ' Maçã'  <br>
+        lista_frutas[2] = ' Morango'  <br>
+        lista_frutas[3] = ' Uva'  <br><br>
+
+
+    </p>
+
+    <p>
+        Para realizar uma pesquisa dentro do array nos utilizamos o metodo <b>indexof</b> que é nativo de objetos do tipo array, para isso, basta recuperar o nosso array <b>lista_frutas</b> e executar o método <b>indexof</b> passando o elemento que nós queremos pesquisar, neste caso vamos pesquisar o <b>Morango</b>, para visusalizar esta informação, vamos dar um <b>console.log</b> dessa pesquisa, para ver nos navegador qual é o retorno desse método.
+    </p>
+
+    <p>
+        console.log(lista_frutas.indexOf('Morango'))
+    </p>
+
+    <p>
+        Para esta pesquisa trazer resultado, o elemento da pesquisa precisa esta da mesma que foi inserido no array <b>(espaços, letras maiuscula e minusculas e caractere especial)</b>, caso contrario ira retornar -1.
+    </p>
+
+    <p>
+        Outra forma mais inchuta.
+    </p>
+
+    <p>
+        <b>
+            
+        if(lista_frutas.indexOf(' Maçã') === -1 ) { <br>
+            console.log('Elemento não existe')  <br>
+        } else {  <br>
+            console.log('Elemento existe e está na posição ' + lista_frutas.indexOf(' Maçã'))  <br>
+        }
+        </b>
+    </p>
+
+    <p> 
+        Ou 
+        <br><br>
+        <b>
+            var auxiliar = lista_frutas.indexOf(' Uva') <br><br>
+
+            if(auxiliar === -1 ) { <br>
+                console.log('Elemento não existe')  <br>
+            } else {  <br>
+                console.log('Elemento existe e está na posição ' + auxiliar)  <br>
+            }
+        </b>
+    </p>
+
+    <script>
+
+        var lista_frutas = Array()
+
+        lista_frutas[0] = ' Banana'
+        lista_frutas[1] = ' Maçã'
+        lista_frutas[2] = ' Morango'
+        lista_frutas[3] = ' Uva'
+
+        //console.log(lista_frutas.indexOf(' Morango'))
+       /*  if(lista_frutas.indexOf(' Maçã') === -1 ) {
+            console.log('Elemento não existe')
+        } else {
+            console.log('Elemento existe e está na posição ' + lista_frutas.indexOf(' Maçã'))
+        } */
+
+        var auxiliar = lista_frutas.indexOf(' Uva')
+
+        if(auxiliar === -1 ) {
+            console.log('Elemento não existe')
+        } else {
+            console.log('Elemento existe e está na posição ' + auxiliar)
+        }
+
+    </script>
+
+</body>
+</html>

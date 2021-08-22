@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções de Callback</title>
+</head>
+<body>
+
+    <h1>O que são funções de Callback</h1>
+
+    <p>Nada mais que funções encaminhadas como parametros para outras funções, o objetivo é apos encaminhar da função chamar outra ou recuperar.</p>
+
+    
+    
+    <script>
+        
+        function exibirArtigo(id, callbackSucesso, callbackErro) {
+            // Lógica: recupera o id via requisição http
+            if ( true ) {
+                callbackSucesso('Funçõe de calback em JS', 'Funções de calback são muito utilizadas...')
+            } else {
+                callbackErro('Erro ao recuperar os dados')
+            }
+        }
+
+        var callbackSucesso = function(titulo, descricao) {
+            document.write('<h1>' + titulo + '</h1>')
+            document.write('<hr />') //o <hr /> cria uma linha sem a necessidade de utilizar css
+            document.write('<p>' + descricao + '</p>')
+        }
+
+        var callbackErro = function(erro) {
+            document.write('<p><b>Erro: </b>' + erro + '</p>')
+        }
+
+        exibirArtigo(1, callbackSucesso, callbackErro)
+
+    </script>
+
+</body>
+</html>

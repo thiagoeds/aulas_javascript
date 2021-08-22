@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - métodos de inclusão e exclusão de elementos</title>
+</head>
+<body>
+
+    <h1>Array - métodos de inclusão e exclusão de elementos</h1>
+
+    <p>Nesta aula vamos aprender como podemos incluir e excluir elementos dos nossos arrays porem de forma programatica, até então nos estavamos declarando os nossos agentes com valores pré estabelecidos, mas é natural que dentro da logica dos nossos codigos, exista necessidade de incluir ou remover elementos desses arrays, portanto, é importante compreender como que nós podemos fazer isso de modo programatico atravez dos nossos scripts</p>
+
+    <p>Vamos ver 4 elementos principais:
+        <br>
+        <ol>
+            <li><b>push:</b> Incluir elemento no final do array</li>
+            <li><b>unshift:</b> Incluir elemento no inicio do array</li>
+            <li><b>pop:</b> Excluir elemento no final do array</li>
+            <li><b>shift:</b> Excluir elemento no inicio do array</li>
+        </ol>
+    </p>
+
+    <p>Veja os exemplos abaixo:</p>
+
+    <hr>
+
+    <span>Lista de Frutas</span>
+
+    <p>Incluir elemento no final do array:</p>
+    <div id="lista" style="font-weight: bold;"></div>    
+    
+    <br/>
+    <hr>
+
+    <span>Lista de Pessoas</span>   
+
+    <p>Incluir elemento no inicio do array:</p>
+    <div id="pessoas" style="font-weight: bold;"></div> 
+
+    <br/>
+    <hr>
+
+    <script>
+        var lista_frutas = Array()
+        
+        lista_frutas = [' Banana', ' Maça', ' Morango', ' Uva']        
+
+        /* lista_frutas[0] = 'Banana'
+        lista_frutas[1] = 'Maça'
+        lista_frutas[2] = 'Morango'
+        lista_frutas[3] = 'Uva' */
+
+        //incluir elemento no final do array
+        lista_frutas.push(' Kiwi')
+
+        document.getElementById('lista').innerHTML = lista_frutas
+
+        console.log('lista_frutas')
+
+
+
+        var lista_pessoas = Array()
+        
+        lista_pessoas = [' joão', ' José', ' Maria', ' Pedro']
+
+        /* lista_pessoas[0] = 'joão'
+        lista_pessoas[1] = 'José'
+        lista_pessoas[2] = 'Maria'
+        lista_pessoas[3] = 'Pedro' */
+
+        //incluir elemento no inicio do array
+        lista_pessoas.unshift(' Willian')
+
+        document.getElementById('pessoas').innerHTML = lista_pessoas
+
+        console.log('lista_pessoas')
+
+        
+    </script>
+
+     <span>Lista de Frutas</span>
+
+     <p>Excluir elemento no final do array:</p>
+     <div id="lista2" style="font-weight: bold;"></div>    
+     
+     <br/>
+     <hr>
+ 
+     <span>Lista de Pessoas</span>   
+ 
+     <p>Excluir elemento no inicio do array:</p>
+     <div id="pessoas2" style="font-weight: bold;"></div> 
+ 
+     <br/>
+     <hr>
+
+     <script>
+        var lista_frutas2 = Array()
+
+        //lista_frutas = ['Banana', 'Maça', 'Morango', 'Uva']
+
+        lista_frutas2[0] = ' Banana'
+        lista_frutas2[1] = ' Maça'
+        lista_frutas2[2] = ' Morango'
+        lista_frutas2[3] = ' Uva'
+
+        //Excluir elemento no final do array
+        lista_frutas2.pop()
+
+        document.getElementById('lista2').innerHTML = lista_frutas2
+
+        console.log('lista_frutas2')
+
+
+        var lista_pessoas2 = Array()
+
+        //lista_pessoas = ['joão', 'José', 'Maria', 'Pedro']
+
+        lista_pessoas2[0] = ' joão'
+        lista_pessoas2[1] = ' José'
+        lista_pessoas2[2] = ' Maria'
+        lista_pessoas2[3] = ' Pedro'
+
+        //Excluir elemento no inicio do array
+        lista_pessoas2.shift()
+
+        document.getElementById('pessoas2').innerHTML = lista_pessoas2
+
+        console.log('lista_pessoas2')
+        
+    </script>
+    
+    <p>Exemplo 2</p>
+
+    <span>Lista de Frutas</span>
+
+     <p>Caso eu decida <b>incluir</b> elemento no <i>inicio</i> do array e <b>excluir</b> elemento no <i>final</i> do array: Nesta situação estou incluido <b>Kiwi</b> e excluindo <b>Uva</b>.</p>
+     <div id="lista3" style="font-weight: bold;"></div>    
+     
+     <br/>
+     <hr>
+ 
+     <span>Lista de Pessoas</span>   
+ 
+     <p>Caso eu decida <b>excluir</b> elemento no <i>inicio</i> do array e <b>incluir</b> elemento no <i>final</i> do array: Nesta situação estou excluindo <b>João</b> e incluido <b>Willian</b>.</p>
+     <div id="pessoas3" style="font-weight: bold;"></div> 
+ 
+     <br/>
+     <hr>
+
+     <script>
+        var lista_frutas3 = Array()
+
+        //lista_frutas = ['Banana', 'Maça', 'Morango', 'Uva']
+
+        lista_frutas3[0] = ' Banana'
+        lista_frutas3[1] = ' Maça'
+        lista_frutas3[2] = ' Morango'
+        lista_frutas3[3] = ' Uva'
+
+        //Incluir elemento no inicio do array
+        lista_frutas3.unshift(' Kiwi')
+        //Excluir elemento no final do array
+        lista_frutas3.pop()
+
+        document.getElementById('lista3').innerHTML = lista_frutas3
+
+        console.log('lista_frutas3')
+
+
+        var lista_pessoas3 = Array()
+
+        //lista_pessoas = ['joão', 'José', 'Maria', 'Pedro']
+
+        lista_pessoas3[0] = ' joão'
+        lista_pessoas3[1] = ' José'
+        lista_pessoas3[2] = ' Maria'
+        lista_pessoas3[3] = ' Pedro'
+
+        //Incluir elemento no final do array
+        lista_pessoas3.push(' Willian')
+        //Excluir elemento no inicio do array
+        lista_pessoas3.shift()
+
+        document.getElementById('pessoas3').innerHTML = lista_pessoas3
+
+        console.log('lista_pessoas3')
+        
+    </script>
+
+    <p>Exemplo 3</p>
+
+    <span>Lista de Frutas</span>
+
+    <p>Adicionando primeiro e ultimo elemento na lista</p>
+
+     <div id="coisas" style="font-weight: bold;"></div>    
+     
+     <br/>
+     <hr>
+
+     <span>Lista de pessoas</span>
+
+     <p>Exluindo primeiro e ultimo elemento da lista</p>
+     
+     <div id="coisas2" style="font-weight: bold;"></div>    
+     
+     <br/>
+     <hr>
+
+     <script>
+        var lista_coisas = Array()
+
+        lista_coisas['frutas'] = Array()
+        lista_coisas['pessoas'] = [' João', ' Maria', ' José', ' Pedro']
+
+        lista_coisas['frutas'].push(' Banana')
+        lista_coisas['frutas'].unshift(' Uva')
+
+        document.getElementById('coisas').innerHTML = lista_coisas['frutas']
+
+        lista_coisas['pessoas'].pop()
+        lista_coisas['pessoas'].shift()
+
+        document.getElementById('coisas2').innerHTML = lista_coisas['pessoas']
+
+        console.log(lista_coisas)
+        
+    </script>
+
+</body>
+</html>

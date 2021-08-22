@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos parte 2 - Mouse</title>
+</head>
+<body style=" width: 980px; margin: 0 auto; display: flex; flex-direction: column; align-content: flex-start">
+
+    <h1>
+        Eventos parte 2 - Mouse
+    </h1>
+
+    <ul>
+        <li>onclick</li>
+        <li>ondblclick</li>
+        <li>onmouseup</li>
+        <li>onmouseover</li>
+        <li>onmouseout</li>
+    </ul>
+
+    <script>
+        
+        function acao() {
+            alert('Evento disparado')
+        }
+        function acao2() {
+            alert('Evento disparado')
+        }
+        function acao3() {
+            alert('Evento disparado')
+        }
+        function acao4() {
+            alert('Evento disparado')
+        }
+        function acao5() {
+            alert('Evento disparado')
+        }
+    
+
+    </script>
+
+   <div style="display: flex;">
+    <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px; margin: 20px"></div>
+
+    <div ondblclick="acao2()" style="background: #ccc; height: 150px; width: 150px; margin: 20px"></div>
+
+    <div onmouseup="acao3()" style="background: #ccc; height: 150px; width: 150px; margin: 20px"></div>
+
+    <div onmouseover="acao4()" style="background: #ccc; height: 150px; width: 150px; margin: 20px"></div>
+
+    <div onmouseout="acao5()" style="background: #ccc; height: 150px; width: 150px; margin: 20px"></div>
+   </div>
+    
+</body>
+</html>

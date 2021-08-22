@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Formulario</title>
+</head>
+<body onresize="console.log('Evento onresize disparado com sucesso!')" onscroll="console.log('Evento onscroll disparado.')">
+
+    <h1>
+        Evento de formulario!
+    </h1>
+
+    <p>
+        Temos três principais tipos de eventos de formulario, sendo um deles o <b>"onfocus"</b> ele é acionado quando o elemento recebe o focu do cursor do mouse, ou seja quando clicamos no elemento de tal modo que aplicamos o focu nele, ja o <b>"onblur"</b> é acionado quando o elemento perde o focu, ou seja quando apertamos o "tab" ou clicamos sobre outro elemento o elemento em questão perde o focu, temos também o evento <b>"onchange"</b> que sera disparado quando o estado do elemento é alterado, isso é muito comum para elementos do tipo "select" quando nos modificamos a opção.
+    </p>
+
+ 
+        
+        onfocus
+        <input onfocus="console.log('Evento onfocus disparado, o usuario clicou aqui')" type="text">
+        
+
+        <br><br><hr><br>
+
+        
+        onblur
+        <input onblur="console.log('Evento onblur disparado, o usuario clicou em outro campo do furmulario')" type="text">
+        
+
+        <br><br><hr><br>
+
+        
+        onchange
+        <input onchange="console.log('Evento onchange disparado, o formulario foi alterado')" type="text">
+       
+        <select onchange="console.log('Evento onchange disparado, o formulario foi alterado')" name="" id="">
+            <option value="">-- Selecione --</option>
+            <option value="1">Primeira opção</option>
+            <option value="2">Segunda opção</option>
+        </select>
+
+
+   
+   
+    
+</body>
+</html>
